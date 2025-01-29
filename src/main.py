@@ -1,6 +1,4 @@
-import datetime
+date = ["import datetime\n","print datetime.datetime.now()\n"]
 
-current_datetime = (datetime.datetime.now())
-echo "current_datetime" > version.md
-
-git add version.md
+with open("version.md", "w") as file:
+    file.writelines(date)
